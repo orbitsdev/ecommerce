@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific.com </title>
+
+    <!-- owl carousel css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+
+
+    <!-- // BOOTSRAP LINK -->
+    <link href="bootstrap.min.css" rel="stylesheet" >
+    <link href="bootstrap.min.css" rel="stylesheet" >
+
+</head>`
+
+
+<style>
+
+.badge-parent{
+    position: relative;
+    display: inline-block;
+
+}
+
+
+.badge-child{
+    position: absolute;
+    top: -5px;
+    right:-5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#map {
+            height: 800px;
+            width: 100%;
+        }
+</style>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyBh1oNe0wqgv4NBQ3AjbxGYIh5mvl9YU&callback=initMap" async defer></script>
+<body>
+
+    	<div id="map"></div>
+<!-- header section star`ts  -->
+
+<header>
+
+<div class="header-1">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i>  Pacific </a>
+
+    <div class="form-container">
+        <form action="">
+            <input type="search" placeholder="search products" id="search" /> 
+            <label for="search" class="fas fa-search"></label>
+        </form>
+    </div>
+
+</div>
+
+<div class="header-2">
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#arrival">arrival</a></li>
+            <li><a href="#featured">featured</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#deal">deal</a></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-user"></a>
+            <a href="#" class="fas fa-bars badge-parent">
+                <div class="badge-child">23</div>
+            </a>
+
+    </div>
+
+</div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<!-- boostrap testing -->
+<!-- <table class="table">
+    <div class="bg-danger p-2">
+        test
+    </div>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table> -->
+<section class="home" id="home">
+
+<div class="home-slider owl-carousel">
+
+    <div class="item">
+        <img src="images/home_img1.jpg" alt="">
+        <div class="content">
+            <h3>Heavy discounts</h3>
+            <p>Buy the product you wish in one click.</p>
+            <a href="#"><button class="btn">discover</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="images/home_img2.jpg" alt="">
+        <div class="content">
+            <h3>Latest gadgets</h3>
+            <p>High quality gadgets are available here </p>
+            <a href="#"><button class="btn">discover</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="images/home_img3.jpg" alt="">
+        <div class="content">
+            <h3>Trending shoes</h3>
+            <p>Buy the shoes that you can imagine.</p>
+            <a href="#"><button class="btn">discover</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="images/home_img4.jpg" alt="">
+        <div class="content">
+            <h3>Fresh groceries</h3>
+            <p>We offer a healthy and fresh groceries.</p>
+            <a href="#"><button class="btn">discover</button></a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- arrival section starts  -->
+
+<section class="arrival" id="arrival">
+
+<h1 class="heading"> <span>new arrivals</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="image">
+            <img src="images/arr_img1.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>smart tv</h3>
+            <div class="subInfo">
+                <strong class="price"> &#8369; 11,000/- <span>&#8369; 13,000/-</span> </strong>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/arr_img2.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>PS 5</h3>
+            <div class="subInfo">
+                <strong class="price"> &#8369; 8,000/- <span>&#8369; 10,000/-</span> </strong>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/arr_img3.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>NIKE SHOES</h3>
+            <div class="subInfo">
+                <strong class="price"> &#8369;500/- <span>&#8369;1,500/-</span> </strong>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/arr_img4.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>SAMSUNG PRO</h3>
+            <div class="subInfo">
+                <strong class="price"> &#8369;15,000/- <span>&#8369;18,000/-</span> </strong>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+            <button onclick="openModal()">Buy Now</button>
+        </div>
+        <div class="overlay">
+            <!-- <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a> -->
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/arr_img5.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>MOCKUP t-shirts</h3>
+            <div class="subInfo">
+                <strong class="price"> &#8369;600/- <span>&#8369;1,500/-</span> </strong>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/arr_img6.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>JBL Flip 6</h3>
+            <div class="subInfo">
+                <strong class="price"> &#8369;1000/- <span>&#8369;3,500/-</span> </strong>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+            <a href="#" style="--i:1;" class="fas fa-heart"></a>
+            <a href="#" style="--i:3;" class="fas fa-search"></a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- arrival section ends -->
+
+<!-- featured section starts  -->
+
+<section class="feature" id="featured">
+
+<h1 class="heading"> <span> featured product </span> </h1>
+    <div class="row">
+
+        <div class="image-container">
+
+            <div class="big-image">
+                <img src="images/watch1.jpg" alt="">
+            </div>
+
+            <div class="small-image">
+                <img class="image-active" src="images/watch1.jpg" alt="">
+                <img src="images/watch2.jpg" alt="">
+                <img src="images/watch3.jpg" alt="">
+                <img src="images/watch4.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <h3>smart watches</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(500+) reviews</span><br>
+                <span>(20k+) Sold</span>
+            </div>
+            <p>Identify the products appearance in different angle!</p>
+            <strong class="price">&#8369;1,500 <span>&#8369;3,000</span> </strong>
+            <a href="#"><button class="btn">buy now</button></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+<h1 class="heading"> <span> product gallery </span> </h1>
+
+<ul class="controls">
+    <li class="btn button-active" data-filter="all">all</li>
+    <li class="btn" data-filter="phone">phone</li>
+    <li class="btn" data-filter="laptop">laptop</li>
+    <li class="btn" data-filter="headphone">headphone</li>
+    <li class="btn" data-filter="shoes">shoes</li>
+</ul>
+
+<div class="image-container">
+
+    <div class="box phone">
+        <div class="image">
+            <img src="images/g_img1.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Iphone 12</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="box phone">
+        <div class="image">
+            <img src="images/g_img2.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>iphone XR</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="box laptop">
+        <div class="image">
+            <img src="images/g_img3.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Lenovo</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="box shoes">
+        <div class="image">
+            <img src="images/g_img4.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>jarmes</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="box laptop">
+        <div class="image">
+            <img src="images/g_img5.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>ROG 6</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="box headphone">
+        <div class="image">
+            <img src="images/g_img6.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Sennheiser</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div>  
+
+    <div class="box shoes">
+        <div class="image">
+            <img src="images/g_img7.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>adidados</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div> 
+
+    <div class="box headphone">
+        <div class="image">
+            <img src="images/g_img8.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>JBL Live pro2</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div> 
+
+    <div class="box headphone">
+        <div class="image">
+            <img src="images/g_img9.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Jabra elite 10</h3>
+            <div class="subInfo">
+                <strong class="price"></strong>
+                
+            </div>
+        </div>
+    </div> 
+
+</div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal" id="deal">
+
+<h1 class="heading"> <span> best deals </span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="images/deal1.jpg" alt="">
+        <div class="content">
+            <h3>latest laptop</h3>
+            <p>upto 25% off on first purchase</p>
+            <a href="#"><button class="btn">explore</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/deal2.jpg" alt="">
+        <div class="content">
+            <h3>new headphone</h3>
+            <p>upto 25% off on first purchase</p>
+            <a href="#"><button class="btn">explore</button></a>
+        </div>
+    </div>
+
+</div>
+
+<div class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <h3>fast delivery</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-user-clock"></i>
+        <h3>24 x 7 support</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-money-check-alt"></i>
+        <h3>easy payments</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-box"></i>
+        <h3>10 days replacements</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, molestiae?</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- newsletter section starts  -->
+
+<section class="newsletter">
+
+    <h1>newsletter</h1>
+    <p>get in touch for latest discounts and updates</p>
+    <form action="">
+        <input type="email" placeholder="enter your email">
+        <input type="submit" class="btn">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i> Pacific </a>
+            <p>Our company gives you the best online shopping experience.</p>
+        </div>
+
+        <div class="box">
+            <h3>links</h3>
+            <a href="#">home</a>
+            <a href="#">arrival</a>
+            <a href="#">featured</a>
+            <a href="#">gallery</a>
+            <a href="#">deal</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+            <p> <i class="fas fa-home"></i>
+                Baranggay Libertad Surallah South Cotabato, Mindanao Philippines 
+            </p>
+            <p> <i class="fas fa-phone"></i>
+                09751497432
+            </p>
+            <p> <i class="fas fa-globe"></i>
+                Pacific@gmail.com
+            </p>
+        </div>
+
+    </div>
+
+<h1 class="credit"> created by <span>GROUP 5</span> | all rights reserved. </h1>
+
+</section>
+
+
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Select Variation</h2>
+        <!-- Your variation selection inputs here -->
+        <!-- Example: -->
+        <label for="color">Color:</label>
+        <select id="color">
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+        </select>
+        <br>
+        <label for="function">Function:</label>
+        <select id="function">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <br>
+        <button onclick="buy()">Buy Now</button>
+    </div>
+</div>
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+<script src="bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- owl carousel js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/main.js"></script>
+<script src="custom.js"></script>
+<script>
+    
+let map;
+
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  map = new Map(document.getElementById("map"), {
+    center: { lat: 6.3385, lng: 124.9727 },
+    zoom: 16,
+  });
+
+  const position = { lat: 6.3385, lng: 124.9727 };
+
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "Isulan",
+  });
+
+  
+}
+		async function initMap() {
+		
+			var myLatLng = {lat: 40.7128, lng: -74.0060};
+		
+			// Create a new map object
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: myLatLng, // Set the center of the map
+				zoom: 20 // Set the zoom level
+			});
+		
+			// Optional: Add a marker to the map
+			var marker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				title: 'New York City'
+			});
+		}
+</script>
+    
+</body>
+</html>

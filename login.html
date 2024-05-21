@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login 08</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	
+	<link rel="stylesheet" href="loginform/css/all.min.css">
+	<link rel="stylesheet" href="loginform/css/font-awesome.min.css">
+	<link rel="stylesheet" href="loginform/css/style.css">
+
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyBh1oNe0wqgv4NBQ3AjbxGYIh5mvl9YU&callback=initMap" async defer></script> -->
+	<script src="functions.js"></script>
+    <style>
+        /* Set the dimensions of the map container */
+        #map {
+            height: 800px;
+            width: 100%;
+        }
+    </style>
+
+	</head>
+	<body>
+		<!-- <div id="map"></div> -->
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">SHOP LATEST AND ORIGINAL GADGETS</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-5">
+					<div class="login-wrap p-4 p-md-5">
+		      	<div class="icon d-flex align-items-center justify-content-center bg-dark">
+					
+					<svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-user ">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
+					  </svg>
+					 
+		      	</div>
+		      	<h3 class="text-center mb-4 text-dark">BYTS SHOP</h3>
+						<div  class="login-form">
+		      		<div class="form-group">
+		      			<input  id="email" type="text" class="form-control rounded-left" placeholder="Username" required>
+		      		</div>
+	            <div class="form-group d-flex">
+	              <input id="password" type="password" class="form-control rounded-left" placeholder="Password" required>
+	            </div>
+	            <!-- <div class="form-group d-md-flex">
+	            	<div class="w-50">
+	            		<label class="checkbox-wrap checkbox-primary">Remember Me
+									  <input type="checkbox" checked>
+									  <span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="w-50 text-md-right">
+									<a href="#">Forgot Password</a>
+								</div>
+	            </div> -->
+	            <div class="form-group">
+	            	<button  class=" rounded btn-dark  p-3 px-5  submit " id="submit" type="submit">Get Started</button>
+	            	<!-- <button type="submit" class=" rounded btn-dark  p-3 px-5  submit ">Get Started</button> -->
+	            </div>
+			</div>
+	        </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+
+
+	
+	let submitButton = document.getElementById("submit");
+
+
+	
+
+
+
+	submitButton.addEventListener("click", submit);
+		function isValidEmail(email) {
+			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			return emailRegex.test(email);
+		}
+
+		function submit() {
+			let email = document.getElementById("email");
+			let password = document.getElementById("password");
+
+			if (email.value.trim() === "" || password.value === "") {
+				alert("Please fill out all fields.");
+			} else if (!isValidEmail(email.value.trim())) {
+				alert("Please enter a valid email address.");
+			} else {
+
+				let user = {
+					email: email.value
+				};
+				 
+				saveData('user',user);
+				 let data = getData('user');
+
+				if(data.email){
+
+					window.location.replace('index.html');
+				}
+
+
+			}
+		}
+
+// let map;
+
+// async function initMap() {
+//   const { Map } = await google.maps.importLibrary("maps");
+//   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+//   map = new Map(document.getElementById("map"), {
+//     center: { lat: 6.3385, lng: 124.9727 },
+//     zoom: 16,
+//   });
+
+//   const position = { lat: 6.6323, lng: -124.5978 };
+
+//   const marker = new AdvancedMarkerElement({
+//     map: map,
+//     position: position,
+//     title: "Isulan",
+//   });
+
+  
+// }
+		// async function initMap() {
+		
+		// 	var myLatLng = {lat: 40.7128, lng: -74.0060};
+		
+		// 	// Create a new map object
+		// 	var map = new google.maps.Map(document.getElementById('map'), {
+		// 		center: myLatLng, // Set the center of the map
+		// 		zoom: 20 // Set the zoom level
+		// 	});
+		
+		// 	// Optional: Add a marker to the map
+		// 	var marker = new google.maps.Marker({
+		// 		position: myLatLng,
+		// 		map: map,
+		// 		title: 'New York City'
+		// 	});
+		// }
+
+		
+		</script>
+		
+<script src="loginform/js/jquery.min.js"></script>
+  <script src="loginform/js/popper.js"></script>
+  <script src="loginform/js/bootstrap.min.js"></script>
+  <script src="loginform/js/main.js"></script>
+
+	</body>
+</html>
+
