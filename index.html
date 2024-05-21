@@ -18,7 +18,7 @@
 
     <!-- // BOOTSRAP LINK -->
     <link href="bootstrap.min.css" rel="stylesheet" >
-    <link href="bootstrap.min.css" rel="stylesheet" >
+    
 
 </head>`
 
@@ -100,6 +100,8 @@ align-items: center;
 </div>
 
 </header>
+
+
 <div id="map"></div>
 <!-- header section ends -->
 
@@ -192,7 +194,12 @@ align-items: center;
 
 <div class="box-container">
 
-    <div class="box">
+    <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "Smart Tv",
+                price: 11000,
+                image: "images/arr_img1.jpg"
+            })'>
         <div class="image">
             <img src="images/arr_img1.jpg" alt="">
         </div>
@@ -215,7 +222,12 @@ align-items: center;
         </div>
     </div>
 
-    <div class="box">
+    <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "PS 5",
+                price: 8000,
+                image: "images/arr_img2.jpg"
+            })'>
         <div class="image">
             <img src="images/arr_img2.jpg" alt="">
         </div>
@@ -238,7 +250,12 @@ align-items: center;
         </div>
     </div>
 
-    <div class="box">
+    <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "NIKE SHOES",
+                price: 8369,
+                image: "images/arr_img3.jpg"
+            })'>
         <div class="image">
             <img src="images/arr_img3.jpg" alt="">
         </div>
@@ -261,7 +278,12 @@ align-items: center;
         </div>
     </div>
 
-    <div class="box">
+    <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "Iphone 10",
+                price: 15000,
+                image: "images/arr_img4.jpg"
+            })'>
         <div class="image">
             <img src="images/arr_img4.jpg" alt="">
         </div>
@@ -285,7 +307,12 @@ align-items: center;
         </div>
     </div>
 
-    <div class="box">
+    <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "MOCKUP t-shirts",
+                price: 600,
+                image: "images/arr_img5.jpg"
+            })'>
         <div class="image">
             <img src="images/arr_img5.jpg" alt="">
         </div>
@@ -308,7 +335,12 @@ align-items: center;
         </div>
     </div>
 
-    <div class="box">
+    <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "JBL Flip 6",
+                price: 980,
+                image: "images/arr_img6.jpg"
+            })'>
         <div class="image">
             <img src="images/arr_img6.jpg" alt="">
         </div>
@@ -399,7 +431,7 @@ align-items: center;
 
 <div class="image-container">
 
-    <div class="box phone">
+    <button class="box phone" onclick="selectedItem()">
         <div class="image">
             <img src="images/g_img1.jpg" alt="">
         </div>
@@ -410,7 +442,7 @@ align-items: center;
                 
             </div>
         </div>
-    </div>
+    </button>
 
     <div class="box phone">
         <div class="image">
@@ -530,7 +562,12 @@ align-items: center;
 
 <div class="box-container">
 
-    <div class="box">
+    <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "Iphone 10",
+                price: 980,
+                image: "home/images/product-item1.jpg"
+            })'>
         <img src="images/deal1.jpg" alt="">
         <div class="content">
             <h3>latest laptop</h3>
@@ -539,7 +576,12 @@ align-items: center;
         </div>
     </div>
 
-    <div class="box">
+    <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "Iphone 10",
+                price: 980,
+                image: "home/images/product-item1.jpg"
+            })'>
         <img src="images/deal2.jpg" alt="">
         <div class="content">
             <h3>new headphone</h3>
@@ -603,12 +645,22 @@ align-items: center;
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "Iphone 10",
+                price: 980,
+                image: "home/images/product-item1.jpg"
+            })'>
             <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i> Pacific </a>
             <p>Our company gives you the best online shopping experience.</p>
         </div>
 
-        <div class="box">
+        <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "Iphone 10",
+                price: 980,
+                image: "home/images/product-item1.jpg"
+            })'>
             <h3>links</h3>
             <a href="#">home</a>
             <a href="#">arrival</a>
@@ -617,7 +669,12 @@ align-items: center;
             <a href="#">deal</a>
         </div>
 
-        <div class="box">
+        <div class="box"  onclick='goToProduct({
+                id: 1,
+                name: "Iphone 10",
+                price: 980,
+                image: "home/images/product-item1.jpg"
+            })'>
             <h3>contact us</h3>
             <p> <i class="fas fa-home"></i>
                 Baranggay Libertad Surallah South Cotabato, Mindanao Philippines 
@@ -705,6 +762,18 @@ async function initMap() {
 
   
 }
+
+function goToProduct(data){
+    
+    
+    localStorage.setItem("selectedProduct", JSON.stringify(data));
+    let selectedItem = localStorage.getItem("selectedProduct");
+    console.log(selectedItem);
+    window.location.href = "../product_details.html";
+
+}
+
+
 		
 </script>
     
